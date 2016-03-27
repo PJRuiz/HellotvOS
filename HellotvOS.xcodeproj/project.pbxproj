@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9540D4321CA7C98B00B8F645 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9540D4311CA7C98B00B8F645 /* main.js */; };
+		9540D4341CA7CD1600B8F645 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540D4331CA7CD1600B8F645 /* ResourceLoader.swift */; };
 		959CE5241CA7C5F20028888F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CE5231CA7C5F20028888F /* AppDelegate.swift */; };
-		959CE5261CA7C5F20028888F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CE5251CA7C5F20028888F /* ViewController.swift */; };
-		959CE5291CA7C5F20028888F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959CE5271CA7C5F20028888F /* Main.storyboard */; };
 		959CE52B1CA7C5F30028888F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959CE52A1CA7C5F30028888F /* Assets.xcassets */; };
 		959CE5361CA7C5F30028888F /* HellotvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CE5351CA7C5F30028888F /* HellotvOSTests.swift */; };
 		959CE5411CA7C5F30028888F /* HellotvOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CE5401CA7C5F30028888F /* HellotvOSUITests.swift */; };
@@ -33,10 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9540D4311CA7C98B00B8F645 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		9540D4331CA7CD1600B8F645 /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
 		959CE5201CA7C5F20028888F /* HellotvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HellotvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959CE5231CA7C5F20028888F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		959CE5251CA7C5F20028888F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		959CE5281CA7C5F20028888F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		959CE52A1CA7C5F30028888F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959CE52C1CA7C5F30028888F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959CE5311CA7C5F30028888F /* HellotvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HellotvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9540D4301CA7C95F00B8F645 /* Static App */ = {
+			isa = PBXGroup;
+			children = (
+				9540D4311CA7C98B00B8F645 /* main.js */,
+			);
+			name = "Static App";
+			sourceTree = "<group>";
+		};
 		959CE5171CA7C5F20028888F = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +103,9 @@
 		959CE5221CA7C5F20028888F /* HellotvOS */ = {
 			isa = PBXGroup;
 			children = (
+				9540D4301CA7C95F00B8F645 /* Static App */,
 				959CE5231CA7C5F20028888F /* AppDelegate.swift */,
-				959CE5251CA7C5F20028888F /* ViewController.swift */,
-				959CE5271CA7C5F20028888F /* Main.storyboard */,
+				9540D4331CA7CD1600B8F645 /* ResourceLoader.swift */,
 				959CE52A1CA7C5F30028888F /* Assets.xcassets */,
 				959CE52C1CA7C5F30028888F /* Info.plist */,
 			);
@@ -227,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				959CE52B1CA7C5F30028888F /* Assets.xcassets in Resources */,
-				959CE5291CA7C5F20028888F /* Main.storyboard in Resources */,
+				9540D4321CA7C98B00B8F645 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959CE5261CA7C5F20028888F /* ViewController.swift in Sources */,
+				9540D4341CA7CD1600B8F645 /* ResourceLoader.swift in Sources */,
 				959CE5241CA7C5F20028888F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,17 +295,6 @@
 			targetProxy = 959CE53D1CA7C5F30028888F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		959CE5271CA7C5F20028888F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				959CE5281CA7C5F20028888F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		959CE5431CA7C5F30028888F /* Debug */ = {
@@ -472,6 +469,7 @@
 				959CE5471CA7C5F30028888F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		959CE5481CA7C5F30028888F /* Build configuration list for PBXNativeTarget "HellotvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +478,7 @@
 				959CE54A1CA7C5F30028888F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		959CE54B1CA7C5F30028888F /* Build configuration list for PBXNativeTarget "HellotvOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +487,7 @@
 				959CE54D1CA7C5F30028888F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

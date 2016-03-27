@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import TVMLKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  
+  var appController: TVApplicationController?
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    //Create a UIWindow object the same size as the screen and save it into the window property.
+    
+    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    
+    // Initialize a TVApplicationControllerContext to provide the launch properties to the application controller. These properties can include the initial JavaScript file, the name of the local storage file and a dictionary of options.
+    
+    let appControllerContext = TVApplicationControllerContext()
+    
+    // Locate the initial JavaScript file within the main bundle and provide its location to the controller context.
+    
+    let javascriptURL = NSBundle.mainBundle().URLForResource("main", withExtension: "js")
+    
+    appControllerContext.javaScriptApplicationURL = javascriptURL!
+    
+    // Create the TVApplicationController using the controller context and the window, save it in the property that was just created
+    
+    appController = TVApplicationController(context: appControllerContext, window: window, delegate: self)
+    
+    
     return true
   }
 
@@ -40,7 +63,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
+  
 
 
+}
+
+extension AppDelegate: TVApplicationControllerDelegate {
+  func appController(appController: TVApplicationController, evaluateAppJavaScriptInContext jsContext: JSContext) {
+    jsContext.setObject(ResourceLoader.self, forKeyedSubscript: "NativeResourceLoader")
+  }
 }
 
