@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9540D4321CA7C98B00B8F645 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 9540D4311CA7C98B00B8F645 /* main.js */; };
 		9540D4341CA7CD1600B8F645 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540D4331CA7CD1600B8F645 /* ResourceLoader.swift */; };
+		9540D4361CA7DEB500B8F645 /* hello.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 9540D4351CA7DEB500B8F645 /* hello.tvml */; };
 		959CE5241CA7C5F20028888F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CE5231CA7C5F20028888F /* AppDelegate.swift */; };
 		959CE52B1CA7C5F30028888F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959CE52A1CA7C5F30028888F /* Assets.xcassets */; };
 		959CE5361CA7C5F30028888F /* HellotvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CE5351CA7C5F30028888F /* HellotvOSTests.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		9540D4311CA7C98B00B8F645 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		9540D4331CA7CD1600B8F645 /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		9540D4351CA7DEB500B8F645 /* hello.tvml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.tvml; sourceTree = "<group>"; };
 		959CE5201CA7C5F20028888F /* HellotvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HellotvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959CE5231CA7C5F20028888F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959CE52A1CA7C5F30028888F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9540D4311CA7C98B00B8F645 /* main.js */,
+				9540D4351CA7DEB500B8F645 /* hello.tvml */,
 			);
 			name = "Static App";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9540D4361CA7DEB500B8F645 /* hello.tvml in Resources */,
 				959CE52B1CA7C5F30028888F /* Assets.xcassets in Resources */,
 				9540D4321CA7C98B00B8F645 /* main.js in Resources */,
 			);

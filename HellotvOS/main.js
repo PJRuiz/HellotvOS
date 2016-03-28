@@ -1,9 +1,12 @@
 App.onLaunch = function(options) {
   console.log("Hello TVML!");
+  var resourceLoader = new ResourceLoaderJS(NativeResourceLoader.create());
+  var initialDoc = resourceLoader.getDocument("hello.tvml");
+  navigationDocument.pushDocument(initialDoc);
 };
 
 class ResourceLoaderJS {
-  contructor(nativeResourceLoader) {
+  constructor(nativeResourceLoader) {
     this.nativeResourceLoader = nativeResourceLoader;
     this.domParser = new DOMParser();
   }
